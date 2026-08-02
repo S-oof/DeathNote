@@ -51,4 +51,16 @@ i think u got the shell , but you wont be able to kill me -kira
 
 63 47 46 7a 63 33 64 6b 49 44 6f 67 61 32 6c 79 59 57 6c 7a 5a 58 5a 70 62 43 41 3d
 
-При розшифровці отримаємо: 
+Отримали підказку використовувати cyberchef:
+<img width="419" height="84" alt="image" src="https://github.com/user-attachments/assets/3ae0a447-e7e9-4adc-9f55-902c03f204b7" />
+
+При розшифровці отримаємо: passwd: kiraisevil
+<img width="798" height="560" alt="image" src="https://github.com/user-attachments/assets/5ace31dd-1592-4ab7-a246-b4e03be50cd0" />
+<img width="402" height="497" alt="image" src="https://github.com/user-attachments/assets/7138b8f5-91d4-440f-bf13-1b2e78d95675" />
+
+Змінюємо користувача поточної сесії на kira, використовуючи знайдений пароль:
+<img width="411" height="102" alt="image" src="https://github.com/user-attachments/assets/af71df2b-7745-477e-9a8f-76f4d3ea1fb6" />
+
+Спробуємо використати той самий пароль для отримання суперкористувача: вводимо команду sudo -i, змінюємо директорію (cd /root), та переглядаємо файли (ls).Знаходимо файл root.txt та виводимо:
+<img width="1033" height="358" alt="image" src="https://github.com/user-attachments/assets/55bf0a0a-648b-4fc1-828d-0c50569a04f9" />
+
