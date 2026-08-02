@@ -1,4 +1,6 @@
 # DeathNote
+ Перша команда яку ми використовуємо    sudo netdiscover -r 10.0.2.0/24
+ та    nmap -Pn -V 10.0.2.X
 
 <img width="675" height="164" alt="image" src="https://github.com/user-attachments/assets/3d6324c3-a88a-485e-ad5d-b818000c0bdb" />
 Перевіримо айпі на якій з двох відкриватиметься потрібна сторінка.
