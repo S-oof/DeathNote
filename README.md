@@ -53,9 +53,10 @@ ssh l@10.0.2.X
 Переглядаємо файл, використовуючи cat user.txt:
 <img width="1919" height="106" alt="image" src="https://github.com/user-attachments/assets/4307da39-52ee-4044-beda-e3463202f2e3" />
 
-
+Переклавши вміст файлу, отримаємо:
 i think u got the shell , but you wont be able to kill me -kira
 
+Шукаємо по всієї файловій системі файли та директорії, які мають в назві "kira":
 <img width="707" height="140" alt="image" src="https://github.com/user-attachments/assets/96add347-9711-4592-9f7b-7007e1c44549" />
 
 Переміщуючись по директорія командами cd.. cd kira cd /opt cd kira-case, знайдемо файл case.wav, де бачимо код:
