@@ -27,8 +27,11 @@ dirsearch -u http://deathnote.vuln/
 Заходимо на сторінку з /important.jpg:
 <img width="1445" height="412" alt="image" src="https://github.com/user-attachments/assets/5769643f-13f9-4db8-b573-e733afc6fea4" />
 
+Але не знайшовши там нічого, використовуємо команду:
+curl http://deathnote.vuln/important.jpg
 <img width="607" height="256" alt="image" src="https://github.com/user-attachments/assets/df8eeec9-e38c-4cc2-9c39-44ae70c4b1ce" />
 
+Отримуємо відповідь, у якій згадуються user.txt — може бути ідентифікатор, а також notes.txt — може бути список паролів.
 <img width="522" height="72" alt="image" src="https://github.com/user-attachments/assets/ef2ea556-377f-4243-bf2a-4e1dcc85f9c9" />
 
 Вміст notes.txt:
@@ -37,13 +40,17 @@ dirsearch -u http://deathnote.vuln/
 Вміст user.txt:
 <img width="937" height="451" alt="image" src="https://github.com/user-attachments/assets/19158f67-dd99-4e9a-b94b-2ec0521cc366" />
 
- hydra -L user.txt -P notes.txt 10.0.2.3 ssh
+Скористаємось інструментом для брут-форсу логінів і паролів hydra:
+hydra -L user.txt -P notes.txt 10.0.2.3 ssh
 <img width="1347" height="281" alt="image" src="https://github.com/user-attachments/assets/e99c0db0-ac37-4122-86ee-84282405e844" />
 
-ls -la
+Заходимо через ssh порт з отриманими логіном і паролем (l:death4me):
+ssh l@10.0.2.X
+Після логінування через ssh в домашньому каталозі cеред файлів знаходимо user.txt.
+Використовуємо команду ls -la
 <img width="482" height="43" alt="image" src="https://github.com/user-attachments/assets/5266e27f-9878-46d2-bf23-f8235190b8ec" />
 
-cat user.txt
+Переглядаємо файл, використовуючи cat user.txt:
 <img width="1919" height="106" alt="image" src="https://github.com/user-attachments/assets/4307da39-52ee-4044-beda-e3463202f2e3" />
 
 
