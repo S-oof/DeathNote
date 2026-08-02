@@ -1,27 +1,30 @@
 # DeathNote
  Перша команда яку ми використовуємо    sudo netdiscover -r 10.0.2.0/24
  та    nmap -Pn -V 10.0.2.X
-
 <img width="675" height="164" alt="image" src="https://github.com/user-attachments/assets/3d6324c3-a88a-485e-ad5d-b818000c0bdb" />
-Перевіримо айпі на якій з двох відкриватиметься потрібна сторінка.
 
+Перевіримо айпі на якій з двох відкриватиметься потрібна сторінка.
 Вводимо у термінал команду sudo nano /etc/hosts та вводимо айпі
 <img width="477" height="180" alt="image" src="https://github.com/user-attachments/assets/d7e4ca05-3cfa-4af9-9875-ad3bd2723c5c" />
 
-Оновлюємо сторінку та отримуємо доступ до сайту
+Оновлюємо сторінку та отримуємо доступ до сайту:
 <img width="1917" height="895" alt="image" src="https://github.com/user-attachments/assets/5ddf0f03-1018-43b4-a03f-5a50f61a02b4" />
 
+Натискаємо F12 та у пошуковому рядку вводимо kira. Шукаємо та копіюємо це посилання:
+http://deathnote.vuln/wordpress/wp-content/uploads/2021/07/
 <img width="1197" height="723" alt="image" src="https://github.com/user-attachments/assets/dcf2136a-763e-4e6b-ae89-af1fc62771e5" />
 
-http://deathnote.vuln/wordpress/wp-content/uploads/2021/07/
-
+Переходимо за посиланням:
 <img width="1055" height="898" alt="image" src="https://github.com/user-attachments/assets/565403b5-a30d-4a07-b098-9b3165f22629" />
 
+Для сканування директорій використаємо команду: 
 dirsearch -u http://deathnote.vuln/
 <img width="1478" height="730" alt="image" src="https://github.com/user-attachments/assets/4a2fefc8-98f8-429d-8801-e064c204e18f" />
 
+У просканованих файлах знаходимо robots.txt, перейдемо за посиланням http://deathnote.vuln/robots.txt
 <img width="778" height="418" alt="image" src="https://github.com/user-attachments/assets/eff4b193-901e-41e7-bbbe-33b1b4a774b7" />
 
+Заходимо на сторінку з /important.jpg:
 <img width="1445" height="412" alt="image" src="https://github.com/user-attachments/assets/5769643f-13f9-4db8-b573-e733afc6fea4" />
 
 <img width="607" height="256" alt="image" src="https://github.com/user-attachments/assets/df8eeec9-e38c-4cc2-9c39-44ae70c4b1ce" />
